@@ -1,4 +1,4 @@
-# Data-visualization-of-BigMart-Sales-of-2013
+# Data-Visualization-of-BigMart-Sales-in-2013
 Getting insights from the dataset and to understand how various features play a role in increasing the sales using python with data science  
 Dataset link "https://raw.githubusercontent.com/AmenaNajeeb/Data/master/bigmart_data.csv"
 My Approach:  I imported the libraries that we are going to use. In this case pandas, numpy, matplotlib, sklearn.tree, sklearn.model_selection and read the file in CSV [df = pd.read_csv(url)]
