@@ -1,3 +1,9 @@
 # Data-visualization-of-BigMart-Sales-of-2013
 Getting insights from the dataset and to understand how various features play a role in increasing the sales using python with data science  
 Dataset link "https://raw.githubusercontent.com/AmenaNajeeb/Data/master/bigmart_data.csv"
+My Approach:  I imported the libraries that we are going to use. In this case pandas, numpy, matplotlib, sklearn.tree, sklearn.model_selection and read the file in CSV [df = pd.read_csv(url)]
+After reading and analysing data. I found that Item_Fat_Content has categories [Low Fat, Regular, LF, reg, low fat] combined the similar categories and converted them to LF, low fat => Low Fat, reg => Regular
+There are some missing values in Outlet_size is filled by mode of the column i.e., “Medium” and Deleted the columns that will not affect the sales like Item_Identifier, Outet_Identifier, Item_Weight, Item_type then Label Encode the columns which have string datatype.
+After visualization of data. Outlets opened in the year 1985 sales are higher and the outlets opened in the year 1998 are low by this we can say people are trusting the old-established outlets. Sales of small outlets are low compared to the medium and high. Supermarket Type 3 has high sales and grocery stores have low sales. In location Tier 2 and Tier 3 sales are high and low in Tier 1.
+Then applied DecisionTreeRegression model and Evaluated the model by checking X (Data of all variables dropping Item_Outlet_Sales), Y (Item_Outlet_Sales) Train and Test got Training accuracy as 1.0 and Testing accuracy as 0.19.
+Conclusion: By the analysis of the given data. Outlets of medium and high size, supermarket type 3 in tier 2 location can expect higher sales. visibility can be considered as stock. less visibility more sell-outs mean higher sales old-established outlets have a slight advantage.
